@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page personnelle de Rafael ISTE — étudiant à l'ESIEE Paris, passionné par la technologie, la programmation et l'innovation.">
+    <title>Page de Rafael ISTE</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body" class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#home">Rafael ISTE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Centres d'intérêts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#links">Liens</a></li>
+
+                    <!-- Language -->
+                    <li class="nav-item dropdown ml-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" data-toggle="dropdown">
+                            <i class="fas fa-globe-americas"></i> FR
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="https://rafael-iste06.github.io/page/index.html"><img src="img/us.png" width="20" height="20"> English</a>
+                            <a class="dropdown-item" href="https://rafael-iste06.github.io/page/fr/index.html"><img src="img/fr.png" width="20" height="20"> Français</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="personal-page">
+
+        <div class="container mt-5 flex-grow-1">
+            <div class="d-flex justify-content-end mb-3">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="themeToggle">
+                    <label class="custom-control-label" for="themeToggle">Thême sombre</label>
+                </div>
+            </div>
+            
+            <section id="#home">
+                <h1 class="text-center mb-5">Bienvenue sur la page de Rafael ISTE</h1>
+            </section>
+        </header>
+    </div>
+
+    <section id="about-me" class="container mt-5 section-block fade-in">
+        <h2>A propos de moi</h2>
+        <p>Je m'appelle Rafael ISTE et je suis actuellement en première année de classe préparatoire intégrée à l'ESIEE Paris.</p><p>Je suis un étudiant passionné par la création d'applications et de jeux. J'aime résoudre des problèmes complexes et découvrir de nouvelles technologies.</p>
+    </section>
+
+    <section class="container mt-5 fade-in">
+        <h2 id="skills" class="text-center mb-4">Skills</h2>
+        <div class="d-flex justify-content-center mb-3">
+            <div class="language-logo" data-language="Python">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="img-fluid" style="width: 70px; height: 70px;">
+            </div>
+            <div class="language-logo" data-language="Java">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/java-4-logo-svg-vector.svg" alt="Java" class="img-fluid" style="width: 70px; height: 70px;">
+            </div>
+            <div class="language-logo" data-language="HTML">
+                <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" class="img-fluid" style="width: 70px; height: 70px;">
+            </div>
+            <div class="language-logo" data-language="CSS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" class="img-fluid" style="width: 70px; height: 70px;">
+            </div>
+            <div class="language-logo" data-language="JavaScript">
+                <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript" class="img-fluid" style="width: 70px; height: 70px;">
+            </div>
+        </div>
+        <section id="language-description" class="js-scroll"></section>
+    </section>
+
+    <section id="interests" class="container mt-5 fade-in">
+        <h2 class="text-center mb-4">Centres d'intérêts</h2>
+        <ul class="list-group mb-4 skill-list">
+            <li class="list-group-item">Développement Web</li>
+            <li class="list-group-item">Programmation Orientée Objet</li>
+            <li class="list-group-item">Développement d'applications de bureau</li>
+            <li class="list-group-item">Intelligence Artificielle</li>
+            <li class="list-group-item">Cybersecurité</li>
+            <li class="list-group-item">Data Science</li>
+        </ul>
+    </section>
+
+    <section id="links" class="container mt-5">
+        <h2 class="text-center mb-4">Liens</h2>
+        <p class="text-center">
+            <a href="mailto:iste.rafael06@gmail.com" class="btn btn-primary mb-2" target="_blank">
+                <i class="fas fa-envelope"></i> Envoyer un mail
+            </a>
+            <a href="https://www.linkedin.com/in/rafael-iste/" class="btn btn-secondary mb-2" target="_blank">
+                <i class="fab fa-linkedin"></i> Mon LinkedIn
+            </a>
+            <a href="https://github.com/Rafael-Iste06" class="btn btn-dark mb-2" target="_blank">
+                <i class="bi bi-github"></i> Mon GitHub
+            </a>
+            <a href="https://rafael-iste06.github.io/page/portfolio/index.html" class="btn btn-info mb-2" target="_self">
+                <i class="fas fa-folder"></i> Mon Portfolio
+            </a>
+            <a href="documents/CV_ISTE_Rafael.pdf" class="btn btn-success mb-2" target="_blank">
+                <i class="fas fa-file-download"></i> Télécharger mon CV
+            </a>
+        </p>
+    </section>
+
+    <button class="back-to-top" onclick="smoothScroll(document.body, 800)">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="text-center py-4 mt-auto fade-in">
+        &copy; 2025 Rafael ISTE — Tous droits réservés.<br>
+        Sous license <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
