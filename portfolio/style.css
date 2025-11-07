@@ -72,9 +72,37 @@ body.dark-theme .selected-badge { background-color: #4f1c79; color: #e0e0e0; }
 #projectContent li.folder span:hover { background-color: rgba(0,123,255,0.1); border-radius: 4px; }
 #projectContent li.file span { color: #007bff; cursor: pointer; }
 
-.file-viewer { max-height: 60vh; overflow-y: auto; border-radius: 6px; font-family: monospace; padding: 15px; }
-.file-viewer pre { margin: 0; }
-.file-viewer code { display: block; padding-left: 0; position: relative; }
+/* --- Apparence sombre pour l'aperçu de fichier dans la modal --- */
+.file-viewer {
+    background-color: #1e1e1e; /* fond sombre */
+    color: #e0e0e0;           /* texte clair */
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* Pour s'assurer que le code est bien lisible */
+.file-viewer pre,
+.file-viewer code {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+/* Ajustement des barres de défilement pour le mode sombre */
+.file-viewer::-webkit-scrollbar {
+    width: 8px;
+}
+.file-viewer::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+}
+.file-viewer::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
 
 body.light-theme .modal-content { background-color: #f8f9fa !important; color: #333 !important; }
 body.dark-theme .modal-content { background-color: #1e1e1e !important; color: #e0e0e0 !important; }
@@ -82,3 +110,4 @@ body.light-theme .modal-header, body.light-theme .modal-body, body.light-theme .
 body.dark-theme .modal-header, body.dark-theme .modal-body, body.dark-theme .modal-footer { color: #e0e0e0 !important; }
 body.light-theme .modal-header .close { color: #000 !important; }
 body.dark-theme .modal-header .close { color: #fff !important; }
+
