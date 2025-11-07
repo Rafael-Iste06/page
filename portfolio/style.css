@@ -1,0 +1,101 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    z-index: 1000;
+    color: #fff;
+}
+
+body.light-theme .back-to-top { background-color: #222; }
+body.light-theme .back-to-top:hover { background-color: #444; }
+body.dark-theme .back-to-top, body.colored-dark-theme .back-to-top { background-color: #333; }
+body.dark-theme .back-to-top:hover, body.colored-dark-theme .back-to-top:hover { background-color: #555; }
+body.colored-light-theme .back-to-top { background-color: #222; }
+body.colored-light-theme .back-to-top:hover { background-color: #444; }
+.back-to-top i { display: block; transform: none; }
+
+body.dark-theme .form-control, body.colored-dark-theme .form-control,
+body.dark-theme select, body.colored-dark-theme select,
+body.dark-theme input[type="text"], body.colored-dark-theme input[type="text"] {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+body.dark-theme .form-control::placeholder, body.colored-dark-theme .form-control::placeholder,
+body.dark-theme input::placeholder, body.colored-dark-theme input::placeholder { color: #aaa; }
+body.dark-theme .form-control:focus, body.colored-dark-theme .form-control:focus,
+body.dark-theme select:focus, body.colored-dark-theme select:focus,
+body.dark-theme input:focus, body.colored-dark-theme input:focus {
+    background-color: #333;
+    border-color: #888;
+    outline: none;
+}
+
+body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; }
+body.light-theme { background-color: #f4f4f4; color: #333; }
+body.light-theme .card { background-color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; }
+body.light-theme .card:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+body.light-theme .card-title, body.light-theme .card-text { color: #333; }
+body.light-theme footer { background-color: #343a40; color: #fff; }
+body.light-theme .btn-primary { background-color: #007bff; border-color: #007bff; }
+body.light-theme .btn-primary:hover { background-color: #0056b3; border-color: #0056b3; }
+
+body.dark-theme { background-color: #121212; color: #e0e0e0; }
+body.dark-theme .card { background-color: #1e1e1e; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+body.dark-theme .card:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.4); }
+body.dark-theme .card-title, body.dark-theme .card-text { color: #e0e0e0; }
+body.dark-theme footer { background-color: #1e1e1e; color: #e0e0e0; }
+body.dark-theme .btn-primary { background-color: #007bff; border-color: #007bff; }
+body.dark-theme .btn-primary:hover { background-color: #0056b3; border-color: #0056b3; }
+
+body.colored-light-theme { background: linear-gradient(to right, #007bff, #00ff7f); border-color: #007bff; }
+body.colored-dark-theme { background: linear-gradient(to right, #3700b3, #00b3b3); border-color: #3700b3; }
+
+body.colored-light-theme .card { background-color: #83b7ec; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+body.colored-light-theme .card:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+body.colored-light-theme .card-title, body.colored-light-theme .card-text { color: #333; }
+
+body.colored-dark-theme .card { background-color: #3484ac; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+body.colored-dark-theme .card:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.4); }
+body.colored-dark-theme .card-title, body.colored-dark-theme .card-text { color: #e0e0e0; }
+
+.selected-badge { font-size: 1rem; padding: 5px 10px; margin-right: 8px; border-radius: 15px; display: inline-flex; align-items: center; }
+body.light-theme .selected-badge { background-color: #6f42c1; color: #fff; }
+body.dark-theme .selected-badge { background-color: #4f1c79; color: #e0e0e0; }
+.selected-badge .close { margin-left: 8px; color: #fff; cursor: pointer; }
+
+#back-to-main-page { position: fixed; top: 10px; left: 10px; }
+
+#projectContent ul { list-style: none; padding-left: 20px; margin: 0; font-family: monospace; position: relative; }
+#projectContent li { position: relative; padding: 2px 0 2px 20px; }
+#projectContent li.folder { font-weight: bold; }
+#projectContent li.folder span { cursor: pointer; display: inline-block; padding: 2px 4px; }
+#projectContent li.folder span:hover { background-color: rgba(0,123,255,0.1); border-radius: 4px; }
+#projectContent li.file span { color: #007bff; cursor: pointer; }
+
+.file-viewer { max-height: 60vh; overflow-y: auto; border-radius: 6px; font-family: monospace; padding: 15px; }
+.file-viewer pre { margin: 0; }
+.file-viewer code { display: block; padding-left: 0; position: relative; }
+
+body.light-theme .modal-content { background-color: #f8f9fa !important; color: #333 !important; }
+body.dark-theme .modal-content { background-color: #1e1e1e !important; color: #e0e0e0 !important; }
+body.colored-light-theme .modal-content { background: linear-gradient(to right, #83b7ec, #b3e0ff) !important; color: #333 !important; }
+body.colored-dark-theme .modal-content { background: linear-gradient(to right, #3484ac, #1b5f87) !important; color: #e0e0e0 !important; }
+body.light-theme .modal-header, body.light-theme .modal-body, body.light-theme .modal-footer { color: #333 !important; }
+body.dark-theme .modal-header, body.dark-theme .modal-body, body.dark-theme .modal-footer { color: #e0e0e0 !important; }
+body.colored-light-theme .modal-header, body.colored-light-theme .modal-body, body.colored-light-theme .modal-footer { color: #333 !important; }
+body.colored-dark-theme .modal-header, body.colored-dark-theme .modal-body, body.colored-dark-theme .modal-footer { color: #e0e0e0 !important; }
+body.light-theme .modal-header .close, body.colored-light-theme .modal-header .close { color: #000 !important; }
+body.dark-theme .modal-header .close, body.colored-dark-theme .modal-header .close { color: #fff !important; }
